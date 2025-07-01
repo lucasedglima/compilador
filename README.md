@@ -7,11 +7,17 @@ Compilador simples com analisador léxico e sintático para uma linguagem própr
 
 O projeto tem a seguinte estrutura:
 
-`├── scanner.l
+`
+├── scanner.l
+
 ├── parser.y
+
 ├── lista_var.c
+
 ├── teste.txt
-├── README.md`
+
+├── README.md
+`
 
 ## Linguagem Implementada
 
