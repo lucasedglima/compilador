@@ -64,7 +64,7 @@ bison -d parser.y
 gcc -o compilador lex.yy.c parser.tab.c lista_var.c
 `
 ## Como Executar
-Você pode analisar um programa da linguagem criada executando o compilador com:
+Para analisar um programa da linguagem criada executando o compilador com:
 `
 ./compilador teste.txt
 `
