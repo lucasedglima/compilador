@@ -1,7 +1,5 @@
 main
 int x;
 x := (5 + 3) * 2;
-sepa ((x % 2) == 0) {
-  devolva(x);
-}
+devolva(x);
 end
