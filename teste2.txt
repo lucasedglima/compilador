@@ -1,0 +1,9 @@
+main
+int i;
+i := 0;
+
+while (i < 5) {
+  devolva(i);
+  i := i + 1;
+}
+end
