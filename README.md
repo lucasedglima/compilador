@@ -9,13 +9,8 @@ O projeto tem a seguinte estrutura:
 
 `
 ├── scanner.l
-
 ├── parser.y
-
-├── lista_var.c
-
 ├── teste.txt
-
 ├── README.md
 `
 
