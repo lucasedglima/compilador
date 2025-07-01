@@ -1,0 +1,34 @@
+TOKEN: MAIN
+TOKEN: INT
+TOKEN: ID (i)
+TOKEN: SEMICOLON
+Comando: declaracao tipo i
+TOKEN: ID (i)
+TOKEN: ATRIB
+TOKEN: INTNUM (0)
+TOKEN: SEMICOLON
+Comando: atribuicao para ID i
+TOKEN: WHILE
+TOKEN: LPAREN
+TOKEN: ID (i)
+TOKEN: LT
+TOKEN: INTNUM (5)
+TOKEN: RPAREN
+TOKEN: LBRACE
+TOKEN: OUTPUT
+TOKEN: LPAREN
+TOKEN: ID (i)
+TOKEN: RPAREN
+TOKEN: SEMICOLON
+Comando: saida
+TOKEN: ID (i)
+TOKEN: ATRIB
+TOKEN: ID (i)
+TOKEN: PLUS
+TOKEN: INTNUM (1)
+TOKEN: SEMICOLON
+Comando: atribuicao para ID i
+TOKEN: RBRACE
+TOKEN: END
+Programa reconhecido com sucesso!
+Fim do parse. Resultado: 0

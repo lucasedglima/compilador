@@ -1,0 +1,25 @@
+TOKEN: MAIN
+TOKEN: INT
+TOKEN: ID (x)
+TOKEN: SEMICOLON
+Comando: declaracao tipo x
+TOKEN: ID (x)
+TOKEN: ATRIB
+TOKEN: LPAREN
+TOKEN: INTNUM (5)
+TOKEN: PLUS
+TOKEN: INTNUM (3)
+TOKEN: RPAREN
+TOKEN: MULT
+TOKEN: INTNUM (2)
+TOKEN: SEMICOLON
+Comando: atribuicao para ID x
+TOKEN: OUTPUT
+TOKEN: LPAREN
+TOKEN: ID (x)
+TOKEN: RPAREN
+TOKEN: SEMICOLON
+Comando: saida
+TOKEN: END
+Programa reconhecido com sucesso!
+Fim do parse. Resultado: 0
