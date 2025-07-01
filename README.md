@@ -5,14 +5,20 @@ Compilador simples com analisador léxico e sintático para uma linguagem própr
 - Lucas Eduardo Gomes de Lima – 2023002037
 - João Paulo Motta Travalini - 202300
 
-O projeto tem a seguinte estrutura:
+##  Estrutura do Projeto
 
-`
-├── scanner.l
-├── parser.y
-├── teste.txt
-├── README.md
-`
+```
+.
+├── README.md        # Documentação do projeto
+├── compilador.exe   # Executável gerado (pode ser recriado)
+├── lex.yy.c         # Código gerado pelo Flex (scanner)
+├── lista_var.c      # Controle de variáveis declaradas
+├── parser.y         # Analisador sintático (gramática Bison)
+├── scanner.l        # Analisador léxico (tokens via Flex)
+├── teste.txt        # Exemplo de programa com expressão aritmética
+└── teste2.txt       # Exemplo de programa com condicional 'sepa'
+```
+
 ## Descrição dos arquivos:
 | Arquivo          | Descrição                                                                                                                                                |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
