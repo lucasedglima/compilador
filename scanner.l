@@ -22,20 +22,20 @@ caracter   \'({letter}|{digit})\'
 %%
 
 "main"              { fprintf(logFile, "TOKEN: MAIN\n"); return MAIN; }
-"end"               { fprintf(logFile, "TOKEN: END\n"); return END; }
+"final"               { fprintf(logFile, "TOKEN: FINAL\n"); return FINAL; }
 
 "int"               { fprintf(logFile, "TOKEN: INT\n"); return INT; }
 "char"              { fprintf(logFile, "TOKEN: CHAR\n"); return CHAR; }
 "float"             { fprintf(logFile, "TOKEN: FLOAT\n"); return FLOAT; }
 "boolean"           { fprintf(logFile, "TOKEN: BOOLEAN\n"); return BOOLEAN; }
 
-"sepa"              { fprintf(logFile, "TOKEN: IF\n"); return IF; }
-"senao"             { fprintf(logFile, "TOKEN: ELSE\n"); return ELSE; }
+"sepa"              { fprintf(logFile, "TOKEN: SEPA\n"); return SEPA; }
+"senao"             { fprintf(logFile, "TOKEN: SENAO\n"); return SENAO; }
 "while"             { fprintf(logFile, "TOKEN: WHILE\n"); return WHILE; }
 "for"               { fprintf(logFile, "TOKEN: FOR\n"); return FOR; }
 
-"receba"            { fprintf(logFile, "TOKEN: INPUT\n"); return INPUT; }
-"devolva"           { fprintf(logFile, "TOKEN: OUTPUT\n"); return OUTPUT; }
+"receba"            { fprintf(logFile, "TOKEN: RECEBA\n"); return RECEBA; }
+"devolva"           { fprintf(logFile, "TOKEN: DEVOLVA\n"); return DEVOLVA; }
 
 ":="                { fprintf(logFile, "TOKEN: ATRIB\n"); return ATRIB; }
 
@@ -57,7 +57,7 @@ caracter   \'({letter}|{digit})\'
 "%"                 { fprintf(logFile, "TOKEN: MOD\n"); return MOD; }
 
 ","                 { fprintf(logFile, "TOKEN: COMMA\n"); return COMMA; }
-";"                 { fprintf(logFile, "TOKEN: SEMICOLON\n"); return SEMICOLON; }
+";"                 { fprintf(logFile, "TOKEN: PONTOVIRGULA\n"); return PONTOVIRGULA; }
 "("                 { fprintf(logFile, "TOKEN: LPAREN\n"); return LPAREN; }
 ")"                 { fprintf(logFile, "TOKEN: RPAREN\n"); return RPAREN; }
 "{"                 { fprintf(logFile, "TOKEN: LBRACE\n"); return LBRACE; }
