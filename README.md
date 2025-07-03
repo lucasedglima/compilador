@@ -3,7 +3,7 @@ Compilador simples com analisador léxico e sintático para uma linguagem própr
 ##  Autores
 
 - Lucas Eduardo Gomes de Lima – 2023002037
-- João Paulo Motta Travalini - 202300
+- João Paulo Motta Travalini - 2023009708
 
 ##  Estrutura do Projeto
 
@@ -60,7 +60,11 @@ Requisitos:
 No terminal MSYS2, execute:
 `
 flex scanner.l
+`
+`
 bison -d parser.y
+`
+`
 gcc -o compilador lex.yy.c parser.tab.c lista_var.c
 `
 ## Como Executar
