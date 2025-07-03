@@ -78,7 +78,6 @@ Para analisar um programa da linguagem criada executando o compilador com:
 `
 ./compilador < teste3.txt
 `
-`
-`
+
 
 
