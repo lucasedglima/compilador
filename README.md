@@ -66,7 +66,7 @@ gcc -o compilador lex.yy.c parser.tab.c lista_var.c
 ## Como Executar
 Para analisar um programa da linguagem criada executando o compilador com:
 `
-./compilador teste.txt
+./compilador < teste.txt
 `
 
 
