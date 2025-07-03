@@ -22,15 +22,15 @@ void yyerror(const char *msg) {
   char *nome;
 }
 
-%token MAIN END
+%token MAIN FINAL
 %token INT CHAR BOOLEAN FLOAT
-%token IF ELSE WHILE FOR
-%token INPUT OUTPUT
+%token SEPA SENAO WHILE FOR
+%token RECEBA DEVOLVA
 %token ATRIB
 %token EQ NEQ LE GE LT GT
 %token AND OR NOT
 %token PLUS MINUS MULT DIV MOD
-%token COMMA SEMICOLON
+%token COMMA PONTOVIRGULA
 %token LPAREN RPAREN LBRACE RBRACE
 %token <nome> ID
 %token <val> INTNUM FLOATNUM
@@ -48,7 +48,7 @@ void yyerror(const char *msg) {
 %%
 
 programa 
-    : MAIN bloco END  { 
+    : MAIN bloco FINAL  { 
         fprintf(logFile, "Programa reconhecido com sucesso!\n");
         printf("Programa reconhecido com sucesso!\n");
       }
@@ -64,16 +64,16 @@ lista_comandos
     ;
 
 comando 
-    : declaracao SEMICOLON {
+    : declaracao PONTOVIRGULA {
         fprintf(logFile, "Comando: declaracao tipo %s\n", $1);
       }
-    | atribuicao SEMICOLON {
+    | atribuicao PONTOVIRGULA {
         fprintf(logFile, "Comando: atribuicao para ID %s\n", $1);
       }
-    | entrada SEMICOLON {
+    | entrada PONTOVIRGULA {
         fprintf(logFile, "Comando: entrada para ID %s\n", $1);
       }
-    | saida SEMICOLON {
+    | saida PONTOVIRGULA {
         fprintf(logFile, "Comando: saida\n");
       }
     | condicional
@@ -100,18 +100,18 @@ atribuicao
     ;
 
 entrada 
-    : ID ATRIB INPUT LPAREN RPAREN {
+    : ID ATRIB RECEBA LPAREN RPAREN {
         $$ = $1;
       }
     ;
 
 saida 
-    : OUTPUT LPAREN expressao RPAREN
+    : DEVOLVA LPAREN expressao RPAREN
     ;
 
 condicional 
-    : IF LPAREN expressao RPAREN LBRACE bloco RBRACE
-    | IF LPAREN expressao RPAREN LBRACE bloco RBRACE ELSE LBRACE bloco RBRACE
+    : SEPA LPAREN expressao RPAREN LBRACE bloco RBRACE
+    | SEPA LPAREN expressao RPAREN LBRACE bloco RBRACE SENAO LBRACE bloco RBRACE
     ;
 
 repeticao 
