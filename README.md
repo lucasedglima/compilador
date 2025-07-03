@@ -72,5 +72,13 @@ Para analisar um programa da linguagem criada executando o compilador com:
 `
 ./compilador < teste.txt
 `
+`
+./compilador < teste2.txt
+`
+`
+./compilador < teste3.txt
+`
+`
+`
 
 
