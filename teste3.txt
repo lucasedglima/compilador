@@ -5,4 +5,4 @@ x := 10;
 sepa ((x % 2) == 0) {
   devolva(x);
 }
-end
+final
